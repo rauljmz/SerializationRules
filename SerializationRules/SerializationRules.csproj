@@ -68,7 +68,6 @@
     <Compile Include="Entities\SerializationDefinition.cs" />
     <Compile Include="Events\Serialization.cs" />
     <Compile Include="Extensions\FileInfoExtensions.cs" />
-    <Compile Include="Extensions\ItemExtensions.cs" />
     <Compile Include="Extensions\Rules.cs" />
     <Compile Include="ISerializationManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
