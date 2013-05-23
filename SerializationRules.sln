@@ -8,6 +8,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Packages", "Packages", "{B8
 		packages\SerializationRules.package = packages\SerializationRules.package
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{5270593B-0CD5-4753-A985-285E2572E867}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +20,10 @@ Global
 		{57C91AC3-3FC7-4793-A719-60E9DA52D1B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57C91AC3-3FC7-4793-A719-60E9DA52D1B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57C91AC3-3FC7-4793-A719-60E9DA52D1B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5270593B-0CD5-4753-A985-285E2572E867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5270593B-0CD5-4753-A985-285E2572E867}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5270593B-0CD5-4753-A985-285E2572E867}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5270593B-0CD5-4753-A985-285E2572E867}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
