@@ -1,8 +1,10 @@
-﻿namespace SerializationRules.Conditions
+﻿using System;
+
+namespace SerializationRules.Conditions
 {
     using Sitecore.Rules;
     using Sitecore.Rules.Conditions;
-    using Extensions;
+
     
     public class IsSerializedAndUpToDate<T> : WhenCondition<T> where T : RuleContext
     {
@@ -10,7 +12,7 @@
     
         protected override bool Execute(T ruleContext)
         {
-            return ruleContext.Item.IsSerializedCurrent(Root);            
+            throw new NotImplementedException();
         }
     }
 }
