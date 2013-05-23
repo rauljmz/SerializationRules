@@ -1,0 +1,68 @@
+----item----
+version: 1
+id: {DFD10F6F-917D-4FAF-9310-48881F128005}
+database: master
+path: /sitecore/system/Settings/Rules/Item Saved/Rules/Serialize templates
+parent: {86E2276A-437F-492F-B1B9-CEDBB3B9DA88}
+name: Serialize templates
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9BDF22F-6E17-47F3-AB64-49C717BA92DA}
+templatekey: Rule
+
+----field----
+field: {908EF45D-4940-4B6A-857D-3739BA4ACF8F}
+name: Rule
+key: rule
+content-length: 531
+
+<?xml version="1.0" encoding="utf-16"?>
+<ruleset>
+  <rule uid="{92B3FCAD-DE03-4448-B7E8-903E277A9142}">
+    <actions>
+      <action id="{0AAE06CF-C442-4293-9169-FA6C2357465B}" uid="4EED96E2010F46F28196C81939817DA0" Root="D:\documents\visual studio 2012\Projects\SerializationRules\serialization" />
+    </actions>
+    <conditions>
+      <condition id="{534FD1CB-B90A-43A3-ABF1-F5621E7A178D}" uid="907BCF073BF747E398B0120774F4F9EF" rulesid="{1A45D99C-1D3D-43A4-8CED-137A841C2D09}" />
+    </conditions>
+  </rule>
+</ruleset>
+----version----
+language: en
+version: 1
+revision: 6af96bec-ba23-4ff4-a906-54dc2c32736a
+
+----field----
+field: {45CF9130-802A-41BE-B3EB-C02F657DCC2E}
+name: Name
+key: name
+content-length: 15
+
+Serialize items
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20130517T113523
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6af96bec-ba23-4ff4-a906-54dc2c32736a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130520T173053:635046678534689212
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

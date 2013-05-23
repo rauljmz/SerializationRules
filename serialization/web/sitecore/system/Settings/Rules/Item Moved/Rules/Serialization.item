@@ -1,0 +1,68 @@
+----item----
+version: 1
+id: {40AFE577-1A69-4039-A2AB-8E36F69CD947}
+database: web
+path: /sitecore/system/Settings/Rules/Item Moved/Rules/Serialization
+parent: {406A79B6-6A0C-49E8-BD94-8C9F90053702}
+name: Serialization
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9BDF22F-6E17-47F3-AB64-49C717BA92DA}
+templatekey: Rule
+
+----field----
+field: {908EF45D-4940-4B6A-857D-3739BA4ACF8F}
+name: Rule
+key: rule
+content-length: 492
+
+<?xml version="1.0" encoding="utf-16"?>
+<ruleset>
+  <rule>
+    <conditions>
+      <condition id="{534FD1CB-B90A-43A3-ABF1-F5621E7A178D}" uid="0EBE969CD524477098B15FD03B0D1499" rulesid="{1A45D99C-1D3D-43A4-8CED-137A841C2D09}" />
+    </conditions>
+    <actions>
+      <action id="{21CF4122-5357-46AD-85FB-46EFF4153691}" uid="{212C976C-08BF-460E-BD07-7F13B3EE12F2}" Root="D:\documents\visual studio 2012\Projects\SerializationRules\serialization" />
+    </actions>
+  </rule>
+</ruleset>
+----version----
+language: en
+version: 1
+revision: 4b8dd22d-88b1-4660-a6f4-1d744333e20d
+
+----field----
+field: {45CF9130-802A-41BE-B3EB-C02F657DCC2E}
+name: Name
+key: name
+content-length: 20
+
+Delete serialization
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20130517T173015
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+4b8dd22d-88b1-4660-a6f4-1d744333e20d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130517T173128:635044086889688762
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

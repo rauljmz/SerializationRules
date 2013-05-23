@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <Site Server="serializationRules" UserName="sitecore\admin" IsRemoteSitecore="True" />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Actions\DeserializeAction.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{26A333EC-5E3D-4B7F-A911-C73A352DF433}</Item>
+    </File>
+    <File Include="Actions\SerializeAction.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{0AAE06CF-C442-4293-9169-FA6C2357465B}</Item>
+    </File>
+    <File Include="Conditions\IsSerializedCondition.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{4B865E3B-B0B1-409D-A1A3-0E17708E6D86}</Item>
+    </File>
+    <File Include="Actions\DeleteSerialization.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{1B9A69A7-1484-471E-BC32-8323CA865222}</Item>
+    </File>
+    <File Include="Conditions\IsSerializedAndUpToDate.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{BA25AD15-43B7-4CB6-AC16-EC7620D8FB38}</Item>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,88 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>SerializationRules</PackageName>
+      <Author />
+      <Version>1.0</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme />
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/system/Settings/Rules/Item Moved/{470EBE36-5B3F-45E1-B1A0-79ABB70D7495}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Item Moved/Rules/{406A79B6-6A0C-49E8-BD94-8C9F90053702}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Item Moved/Rules/Serialization/{40AFE577-1A69-4039-A2AB-8E36F69CD947}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Item Saved/Rules/Serialize templates/{DFD10F6F-917D-4FAF-9310-48881F128005}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Predefined Conditions/{2A5B4682-FD6C-44AE-9640-05AB76A8936C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Predefined Conditions/Serialize/{1A45D99C-1D3D-43A4-8CED-137A841C2D09}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Item Deleted/Rules/DeleteSerialization/{C83FB545-F66A-45E0-9C6E-7C622CD06B8E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Version Removed/Rules/DeleteSerialization/{3B64BC5F-E94F-4135-803E-7193C52B043C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Common/Actions/Serialization/{2BBB153A-81C9-49CE-9AF0-EE24CE77AC08}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Common/Actions/Serialization/DeleteSerialization/{1B9A69A7-1484-471E-BC32-8323CA865222}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Common/Actions/Serialization/SerializeAction/{0AAE06CF-C442-4293-9169-FA6C2357465B}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Common/Actions/Serialization/SerializeDeepAction/{21CF4122-5357-46AD-85FB-46EFF4153691}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Common/Conditions/Serialization/{2A24378A-518A-4422-B28E-B6C6A290997D}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Common/Conditions/Serialization/IsSerializedAndUpToDate/{BA25AD15-43B7-4CB6-AC16-EC7620D8FB38}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Common/Conditions/Serialization/IsSerializedCondition/{4B865E3B-B0B1-409D-A1A3-0E17708E6D86}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Items</Name>
+    </xitems>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/ItemMovedRules.config</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root />
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Files</Name>
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>
