@@ -1,22 +1,20 @@
 ﻿using System.IO;
 using SerializationRules.Entities;
-using SerializationRules.Providers;
 
-
-namespace SerializationRules
+namespace SerializationRules.Providers
 {
-    public class SerializationManager : ISerializationManager
+    public class SerializationProvider : ISerializationProvider
     {
         private readonly IPathProvider _pathProvider;
         private readonly IDefinitionsProvider _definitionsProvider;
 
-        public SerializationManager(IPathProvider pathProvider, IDefinitionsProvider definitionsProvider)
+        public SerializationProvider(IPathProvider pathProvider, IDefinitionsProvider definitionsProvider)
         {
             _pathProvider = pathProvider;
             _definitionsProvider = definitionsProvider;
         }
 
-        public SerializationManager():this(new PathProvider(), new DefinitionsProvider())
+        public SerializationProvider():this(new PathProvider(), new DefinitionsProvider())
         {
             
         }

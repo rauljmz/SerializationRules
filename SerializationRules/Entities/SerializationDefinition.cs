@@ -1,7 +1,7 @@
-﻿using SerializationRules.Conditions;
+﻿using System.Linq;
+using SerializationRules.Conditions;
 using Sitecore.Data.Items;
 using Sitecore.Rules;
-using SerializationRules.Extensions;
 
 namespace SerializationRules.Entities
 {
@@ -12,7 +12,7 @@ namespace SerializationRules.Entities
  
         public string Filter { get; set; }
 
-        public SerializationDefinition(string path, bool deep, string filter)
+        public SerializationDefinition(string path, string filter)
         {
             Path = path;
             Filter = filter;
@@ -26,10 +26,10 @@ namespace SerializationRules.Entities
 
         public bool Evaluate(ISerializableItem item)
         {
-            var rules = RuleFactory.ParseRules<RuleContext>(item.Database, Filter);
+            var rules = RuleFactory.ParseRules<SerializationRuleContext>(item.Database, Filter);
             var context = new SerializationRuleContext{SerializationDefinition = this};
             item.InitializeSerializationRuleContext(context);
-            return rules.Evaluate(context);
+            return rules.Rules.All(rule => rule.Evaluate(context));
         }
 
     }

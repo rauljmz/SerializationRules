@@ -7,8 +7,5 @@
     <File Include="Conditions\IsSerializedCondition.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
       <Item DatabaseName="master">{4B865E3B-B0B1-409D-A1A3-0E17708E6D86}</Item>
     </File>
-    <File Include="Conditions\IsSerializedAndUpToDate.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
-      <Item DatabaseName="master">{BA25AD15-43B7-4CB6-AC16-EC7620D8FB38}</Item>
-    </File>
   </ItemGroup>
 </Project>

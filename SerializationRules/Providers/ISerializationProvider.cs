@@ -1,8 +1,8 @@
 ﻿using SerializationRules.Entities;
 
-namespace SerializationRules
+namespace SerializationRules.Providers
 {
-    public interface ISerializationManager
+    public interface ISerializationProvider
     {
         void Serialize(ISerializableItem item);
         void Remove(ISerializableItem item, string oldParentId);
