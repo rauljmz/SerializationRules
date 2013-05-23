@@ -6,6 +6,6 @@ namespace SerializationRules.Providers
 {
     public interface IDefinitionsProvider
     {
-        IEnumerable<SerializationDefinition> GetSerializationDefinitions(Database database);
+        IEnumerable<ISerializationDefinition> GetSerializationDefinitions(Database database);
     }
 }

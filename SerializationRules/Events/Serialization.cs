@@ -32,7 +32,11 @@ namespace SerializationRules.Events
             var item = Sitecore.Events.Event.ExtractParameter<Item>(args, 0);
             var parentID = Sitecore.Events.Event.ExtractParameter<ID>(args, 1);
 
-            _serializationProvider.Remove(new SerializableItem(item),parentID.ToString());
+            var oldParentItem = item.Database.GetItem(parentID);
+            if (oldParentItem == null) return;
+
+            var oldParentSerializable = new SerializableItem(oldParentItem);
+            _serializationProvider.Remove(new SerializableItem(item), oldParentSerializable);
         }
 
         public void OnItemMoved(object sender, EventArgs args)
@@ -40,8 +44,13 @@ namespace SerializationRules.Events
             var item = Sitecore.Events.Event.ExtractParameter<Item>(args, 0);
             var parentID = Sitecore.Events.Event.ExtractParameter<ID>(args, 1);
 
+            var oldParentItem = item.Database.GetItem(parentID);
+            if (oldParentItem == null) return;
+
+            var oldParentSerializable = new SerializableItem(oldParentItem);
+
             _serializationProvider.Serialize(new SerializableItem(item));
-            _serializationProvider.Remove(new SerializableItem(item), parentID.ToString());
+            _serializationProvider.Remove(new SerializableItem(item), oldParentSerializable);
         }
 
         public void OnVersionRemoved(object sender, EventArgs args)

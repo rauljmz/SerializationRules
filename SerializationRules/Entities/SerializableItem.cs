@@ -7,13 +7,19 @@ namespace SerializationRules.Entities
 {
     public class SerializableItem : CustomItem, ISerializableItem
     {
-        public SerializableItem(Item innerItem) : base(innerItem)
+        public SerializableItem(Item innerItem)
+            : base(innerItem)
         {
         }
 
-        public string FullPath()
+        public string DatabaseName
         {
-            return InnerItem.Paths.FullPath;
+            get { return InnerItem.Database.Name; }
+        }
+
+        public string FullPath
+        {
+            get { return InnerItem.Paths.FullPath; }
         }
 
         public void Dump(string root)

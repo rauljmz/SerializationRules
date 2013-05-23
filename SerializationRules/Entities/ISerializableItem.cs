@@ -5,7 +5,8 @@ namespace SerializationRules.Entities
 {
     public interface ISerializableItem
     {
-        string FullPath();
+        string FullPath { get; }
+        string DatabaseName { get; }
         Database Database { get; }
         string Name { get; }
         void Dump(string root);

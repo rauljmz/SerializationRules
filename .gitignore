@@ -4,4 +4,5 @@ obj/
 *.user
 *.dll
 *.pubxml
-/PublishProfiles/
+/PublishProfiles
+packages/

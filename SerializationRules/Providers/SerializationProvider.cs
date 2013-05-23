@@ -38,12 +38,8 @@ namespace SerializationRules.Providers
             }
         }
 
-        public virtual void Remove(ISerializableItem item, string oldParentId)
+        public virtual void Remove(ISerializableItem item, ISerializableItem oldParentSerializable)
         {
-            var oldParentItem = item.Database.GetItem(oldParentId);
-            if (oldParentItem == null) return;
-
-            var oldParentSerializable = new SerializableItem(oldParentItem);
 
             foreach (var serializableDefinition in _definitionsProvider.GetSerializationDefinitions(item.Database))
             {
@@ -59,7 +55,7 @@ namespace SerializationRules.Providers
         }
 
 
-        public virtual bool IsSerialized(ISerializableItem item, SerializationDefinition definition)
+        public virtual bool IsSerialized(ISerializableItem item, ISerializationDefinition definition)
         {
             return new FileInfo(_pathProvider.GetPath(item, definition.Path)).Exists;
         }

@@ -5,7 +5,7 @@ using Sitecore.Rules;
 
 namespace SerializationRules.Entities
 {
-    public class SerializationDefinition
+    public class SerializationDefinition : ISerializationDefinition
     {
 
         public string Path { get; set; }
