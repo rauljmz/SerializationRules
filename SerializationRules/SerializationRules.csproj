@@ -70,6 +70,7 @@
     <Compile Include="Actions\SerializeAction.cs" />
     <Compile Include="Conditions\IsSerializedAndUpToDate.cs" />
     <Compile Include="Conditions\IsSerializedCondition.cs" />
+    <Compile Include="Events\Serialization.cs" />
     <Compile Include="Extensions\FileInfoExtensions.cs" />
     <Compile Include="Extensions\ItemExtensions.cs" />
     <Compile Include="MovedItemRules\MovedItemRuleContext.cs" />
