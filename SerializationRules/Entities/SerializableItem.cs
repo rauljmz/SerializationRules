@@ -5,22 +5,17 @@ using Sitecore.Data.Serialization;
 
 namespace SerializationRules.Entities
 {
-    public class SerializableItem : CustomItem, ISerializableItem
+    public class SerializableItem : ScItem, ISerializableItem
     {
         public SerializableItem(Item innerItem)
             : base(innerItem)
-        {
+        {        
+            FullPath = innerItem.Paths.FullPath;
         }
 
-        public string DatabaseName
-        {
-            get { return InnerItem.Database.Name; }
-        }
 
-        public string FullPath
-        {
-            get { return InnerItem.Paths.FullPath; }
-        }
+
+        public string FullPath { get; set; }
 
         public void Dump(string root)
         {
@@ -30,6 +25,7 @@ namespace SerializationRules.Entities
         public void InitializeSerializationRuleContext(SerializationRuleContext serializationRuleContext)
         {
             serializationRuleContext.Item = InnerItem;
+            
         }
     }
 }

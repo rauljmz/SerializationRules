@@ -65,6 +65,8 @@
     <Compile Include="Conditions\SerializationRuleContext.cs" />
     <Compile Include="Entities\ISerializableItem.cs" />
     <Compile Include="Entities\ISerializationDefinition.cs" />
+    <Compile Include="Entities\ScDatabase.cs" />
+    <Compile Include="Entities\ScItem.cs" />
     <Compile Include="Entities\SerializationDefinition.cs" />
     <Compile Include="Events\Serialization.cs" />
     <Compile Include="Extensions\FileInfoExtensions.cs" />

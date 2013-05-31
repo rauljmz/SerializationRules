@@ -9,7 +9,7 @@ namespace SerializationRules.Providers
         protected virtual string GetRelativePath(ISerializableItem item)
         {
             return
-                string.Concat(item.DatabaseName,
+                string.Concat(item.Database.Name,
                               item.FullPath.Replace('/', '\\')
                               );
         }

@@ -2,8 +2,9 @@
 {
     public interface ISerializationDefinition
     {
-        string Path { get; set; }
-        string Filter { get; set; }
+        string Path { get; }
+        string Filter { get; }
+        bool Enabled { get;  }
         bool Evaluate(ISerializableItem item);
     }
 }
